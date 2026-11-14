@@ -117,12 +117,6 @@ function Contact() {
                   </a>
                 </p>
               
-                <p>
-                  <strong> Dan Gall - Corporate Affairs:</strong><br />
-                  <a className="text-accent-green hover:underline break-all" href="mailto:dg@alkiontech.com">
-                    dg@alkiontech.com
-                  </a>{" "}
-                </p>
 
                 <p>
                   <strong>Viktor Andersson - Technical inquiries:</strong><br />
