@@ -1,7 +1,6 @@
 import React from "react";
 import { UsersRound } from "lucide-react";
 
-import DanGell from "../../Assets/Team/DanGell.webp";
 import ViktorAndersson from "../../Assets/Team/ViktorAndersson.webp";
 import XiangruiKong from "../../Assets/Team/XiangruiKong.png";
 
@@ -15,15 +14,7 @@ export default function Team() {
             img: ViktorAndersson,
         },
         {
-            name: "Dan Gall",
-            role: "CEO",
-            degree: "PhD",
-            email: "dg@alkiontech.com",
-            img: DanGell,
-        },
-        {
             name: "Xiangrui Kong",
-            role: "CSO",
             degree: "PhD",
             email: "xk@alkiontech.com",
             img: XiangruiKong,
@@ -54,7 +45,7 @@ export default function Team() {
                 </div>
 
                 {/* TEAM GRID */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10 mt-8 sm:mt-10">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 lg:gap-10 mt-8 sm:mt-10 max-w-4xl mx-auto">
                     {teamMembers.map(({ name, role, degree, email, img }) => (
                         <div
                             key={name}
@@ -74,9 +65,11 @@ export default function Team() {
                                 {degree}
                             </p>
 
-                            <p className="text-accent-green font-medium text-base sm:text-lg mt-1">
-                                {role}
-                            </p>
+                            {role && (
+                                <p className="text-accent-green font-medium text-base sm:text-lg mt-1">
+                                    {role}
+                                </p>
+                            )}
 
                             <a
                                 href={`mailto:${email}`}
