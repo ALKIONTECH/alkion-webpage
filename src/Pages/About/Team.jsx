@@ -8,7 +8,6 @@ export default function Team() {
     const teamMembers = [
         {
             name: "Viktor Andersson",
-            role: "CTO",
             degree: "PhD",
             email: "va@alkiontech.com",
             img: ViktorAndersson,
